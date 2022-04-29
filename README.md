@@ -25,10 +25,18 @@ A countdown timer that will live forever in the shadow of
 * [Install from the AUR](https://aur.archlinux.org/packages/tty-countdown-git)
 * `pacaur -S tty-countdown-git`
 
+### macOS
+
+macOS doesn't let you write stuff under `/usr/bin` and `/usr/share` unless you disable SIP, so:
+
+    $ git clone https://github.com/metalelf0/tty-countdown && cd tty-countdown
+    $ cp tty-countdown.py /usr/local/bin/tty-countdown && chmod +x /usr/local/bin/tty-countdown
+    $ mkdir ~/.config/tty-countdown && cp font.txt ~/.config/tty-countdown
+
 ### Other
-    $ git clone https://github.com/veggiedefender/tty-countdown && cd tty-countdown
-    $ sudo cp tty-countdown /usr/bin/ && chmod +x /usr/bin/tty-countdown
-    $ sudo mkdir /usr/share/tty-countdown/ && cp font.txt /usr/share/tty-countdown/
+    $ git clone https://github.com/metalelf0/tty-countdown && cd tty-countdown
+    $ sudo cp tty-countdown.sh /usr/bin/tty-countdown && chmod +x /usr/bin/tty-countdown
+    $ mkdir ~/.config/tty-countdown && cp font.txt ~/.config/tty-countdown
 
 ### Windows
 * Does this even work on Windows?
